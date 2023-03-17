@@ -1,0 +1,150 @@
+.cooperation {
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+
+@media (max-width: 991.98px) {
+	.cooperation {
+		padding-top: 130px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.cooperation {
+		padding-top: 100px;
+		padding-bottom: 30px;
+	}
+}
+
+.cooperation__container {}
+
+.title {}
+
+.title__label {}
+
+.cooperation__tabs {
+	display: flex;
+	gap: 40px;
+}
+
+@media (max-width: 991.98px) {
+	.cooperation__tabs {
+		flex-direction: column;
+	}
+}
+
+.tabs-cooperation {}
+
+.tabs-cooperation__nav {
+	flex: 1 0 15%;
+	padding: 0px 20px 0px 20px;
+	flex-direction: column;
+	column-gap: 50px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.tabs-cooperation__button {
+	color: #616161;
+	font-size: 20px;
+	line-height: 26px;
+	cursor: pointer;
+	position: relative;
+	transition: color 0.3s ease 0s;
+	background-color: transparent;
+	text-align: start;
+	padding-bottom: 20px;
+}
+
+.tabs-cooperation__button::after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	transition: width 0.3s ease 0s;
+	/* background-color: #4285F4; */
+	background-color: #37590b;
+}
+
+.tabs-cooperation__button:hover {
+	/* color: #85abe7; */
+	color: #6ab50b;
+}
+
+.tabs-cooperation__button:hover::after {
+	width: 100%;
+}
+
+.tabs-cooperation__button.active {
+	/* color: #85abe7; */
+	color: #6ab50b;
+	font-weight: bold;
+}
+
+.tabs-cooperation__button.active::after {
+	width: 100%;
+}
+
+.tabs-cooperation__body {
+	flex: 1 0 85%;
+	padding: 0px 20px 0px 20px;
+}
+
+.tabs-cooperation__item {
+	display: none;
+}
+
+.tabs-cooperation__item.active {
+	display: block;
+}
+
+/* ------- */
+
+
+.cooperation__title {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.cooperation__subtitle {
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 20px;
+}
+
+.cooperation__title:not(:first-child) {
+	padding-top: 30px;
+}
+
+
+.content-delivery__sending {}
+
+.cooperation__list {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.cooperation__link {
+	padding-left: 20px;
+	position: relative;
+}
+
+.cooperation__link:not(:last-child) {
+	padding-bottom: 20px;
+}
+
+.cooperation__link::before {
+	content: '';
+	background-color: #52451f;
+	width: 10px;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+
